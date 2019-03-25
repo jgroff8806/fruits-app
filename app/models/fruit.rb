@@ -10,4 +10,6 @@
 #
 
 class Fruit < ApplicationRecord
+  validates :id, presence: true, uniqueness: true
+  validates :name, :description, presence: true
 end
